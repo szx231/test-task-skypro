@@ -1,0 +1,36 @@
+.hero__wrapper {
+  background-color: var(--bgGrey-color);
+  width: 100%;
+  max-width: 1406px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  background-color: var(--bgGrey-color);
+  gap: 20px;
+  justify-content: space-between
+}
+
+.countUsers {
+  margin: 40px 0;
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--color-black);
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:770px) {
+  .hero {
+    justify-content: center;
+  }
+  .buttonsWrapper {
+    justify-content: center;
+  }
+}

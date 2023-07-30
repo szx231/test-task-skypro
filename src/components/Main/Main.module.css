@@ -1,0 +1,35 @@
+.hero__wrapper {
+  background-color: var(--bgGrey-color);
+  height: 100vh;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1406px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:  30% 70%;
+  background-color: var(--bgGrey-color);
+  padding: 30px 56px;
+}
+
+@media screen and (max-width:990px) {
+  .hero {
+    grid-template-columns: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .hero {
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .hero {
+    padding: 30px 0px;
+  }
+}

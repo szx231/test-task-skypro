@@ -1,0 +1,69 @@
+.user-profile__img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin-bottom: 29px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-profile__name {
+  color: var(--color-black);
+  line-height: 1.3;
+  font-size: 26px;
+  font-weight: var(--fw-bold);
+  margin-bottom: 12px;
+}
+
+.user-profile__descr {
+  color: var(--color-blue);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-18);
+  line-height: 1.2;
+}
+
+.user-profile__social {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.user-profile-social__text {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: var(--fs-16);
+  line-height: 1.5;
+  font-weight: var(--fw-light);
+  color: var(--color-black);
+}
+
+
+.user-profile__following::before {
+  content: url(./img/social-following.svg);
+  margin-right: 12px;
+}
+
+.user-profile__followers::before {
+  content: url(./img/social-followers.svg);
+  margin-right: 12px;
+}
+
+@media screen and (max-width:990px) {
+  .user__profile {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .user-profile__img {
+    width: 270px;
+  }
+  .user-profile__social {
+    display: grid;
+    justify-items: center;
+  }
+}
