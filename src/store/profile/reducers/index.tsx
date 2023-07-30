@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import { IMergeProfileRepositories } from '../../types';
 import { fetchProfile } from '../thunk';
 

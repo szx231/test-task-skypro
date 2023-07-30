@@ -1,4 +1,5 @@
-import { memo, FC } from 'react';
+import { FC, memo } from 'react';
+
 import styles from './Card.module.css';
 
 type ICard = {

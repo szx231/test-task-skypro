@@ -1,6 +1,6 @@
+import { Container } from '../Container';
 import UserNoFound from './img/UserNotFound.svg';
 import styles from './UserNotFound.module.css';
-import { Container } from '../Container';
 
 export const UserNotFound = () => {
   return (

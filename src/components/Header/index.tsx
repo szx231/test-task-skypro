@@ -1,11 +1,13 @@
-import { ChangeEvent, FC, ReactNode, memo } from 'react';
+import { ChangeEvent, FC, memo, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './Header.module.css';
-import githublogo from './img/githublogo.svg';
+
 import { RoutePath } from '../../routes';
 import { useAppDispatch, useAppSelector } from '../../store/redux-hooks';
 import { changeSearchValue, inputChangeValue } from '../../store/search/reducers';
+import { selectSearch } from '../../store/search/selectors';
 import { Search } from '../Search';
+import styles from './Header.module.css';
+import githublogo from './img/githublogo.svg';
 
 type IHeader = {
   children?: ReactNode;
@@ -14,7 +16,7 @@ type IHeader = {
 export const Header: FC<IHeader> = memo(({ children }) => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-  const { inputValue } = useAppSelector((state) => state.search);
+  const { inputValue } = useAppSelector(selectSearch);
 
   const handleChangeSearchValue = () => {
     dispatch(changeSearchValue(inputValue));

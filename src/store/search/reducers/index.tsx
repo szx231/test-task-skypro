@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import { getParams } from '../../../helpers/getQueryParams';
 
 interface Search {

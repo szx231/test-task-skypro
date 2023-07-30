@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import TopBarProgress from 'react-topbar-progress-indicator';
+
 import { DEFAULT_REPOS_COUNT_PROFILE } from '../../api/constant';
 import { Card } from '../../components/Card';
 import { CardList } from '../../components/CardList';

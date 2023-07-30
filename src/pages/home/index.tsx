@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import TopBarProgress from 'react-topbar-progress-indicator';
-import styles from './Home.module.css';
+
 import { DEFAULT_USERS_COUNT } from '../../api/constant';
 import { Pagination } from '../../components/Pagination';
 import { ErrorMessage } from '../../components/UI/ErrorMessage';
@@ -11,8 +11,10 @@ import { UsersList } from '../../components/UsersList';
 import { UserCard } from '../../components/UsersList/UserCard';
 import { getParams } from '../../helpers/getQueryParams';
 import { useAppDispatch, useAppSelector } from '../../store/redux-hooks';
+import { selectSearch } from '../../store/search/selectors';
 import { selectUsers } from '../../store/users/selectors';
 import { fetchUsers } from '../../store/users/thunk';
+import styles from './Home.module.css';
 
 const Home = () => {
   const dispatch = useAppDispatch();
@@ -23,7 +25,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(+queryParamsPage);
 
   const { users, status, total_count } = useAppSelector(selectUsers);
-  const { searchValue } = useAppSelector((state) => state.search);
+  const { searchValue } = useAppSelector(selectSearch);
 
   const PAGE_COUNT = Math.ceil(total_count / DEFAULT_USERS_COUNT);
 

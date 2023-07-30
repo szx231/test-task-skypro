@@ -1,5 +1,6 @@
 import cn from 'classnames';
-import { memo, FC } from 'react';
+import { FC, memo } from 'react';
+
 import styles from './UserProfile.module.css';
 
 type IUserProfile = {

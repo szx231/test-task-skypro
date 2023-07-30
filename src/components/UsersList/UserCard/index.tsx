@@ -1,7 +1,8 @@
-import { startTransition, FC, memo } from 'react';
+import { FC, memo, startTransition } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './UserCard.module.css';
+
 import { RoutePath } from '../../../routes';
+import styles from './UserCard.module.css';
 
 type IUserCard = {
   avatar_url: string;

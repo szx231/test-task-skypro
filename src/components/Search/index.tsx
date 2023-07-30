@@ -1,4 +1,5 @@
 import { ChangeEvent, FC } from 'react';
+
 import styles from './Search.module.css';
 
 interface ISearch {

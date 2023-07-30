@@ -1,5 +1,6 @@
 import { FC, memo } from 'react';
 import ReactPaginate from 'react-paginate';
+
 import styles from './Pagination.module.css';
 import { PaginationProps } from './types';
 

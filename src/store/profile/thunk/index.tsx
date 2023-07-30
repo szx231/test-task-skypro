@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+
 import { API_GET_PROFILE, DEFAULT_REPOS_COUNT_PROFILE, TOKEN_GITHUB } from '../../../api/constant';
 import { IProfile, IUserRepositories } from '../../types';
 import { ACTION_FETCH_PROFILE } from '../actions';

@@ -1,4 +1,5 @@
-import { FC, ReactNode, memo } from 'react';
+import { FC, memo, ReactNode } from 'react';
+
 import styles from './UserRepositories.module.css';
 
 type IUserRepositories = {

@@ -1,4 +1,5 @@
 import axios, { AxiosError } from 'axios';
+
 import { API_GET_USERS, DEFAULT_USERS_COUNT, TOKEN_GITHUB } from '../../../api/constant';
 import { IProfile, IUsersResponse } from '../../types';
 

@@ -1,9 +1,10 @@
-import { FC, ReactNode, memo } from 'react';
-import styles from './UsersList.module.css';
+import { FC, memo, ReactNode } from 'react';
+
 import { useAppDispatch } from '../../store/redux-hooks';
-import { sortToDown, sortToBigger } from '../../store/users/reducers';
+import { sortToBigger, sortToDown } from '../../store/users/reducers';
 import { Container } from '../Container';
 import { Button } from '../UI/Button';
+import styles from './UsersList.module.css';
 
 type IUserList = {
   children: ReactNode;
